@@ -1,18 +1,9 @@
 /*
- * 単位について
- * 1px = 1ドット分(ディスプレイの一つの点の分)
- * 1em = 親要素のフォントサイズと同じ = 通常16px
- */
-
-/*
  * Webフォントの読み込み
  * https://fonts.google.com/specimen/Kiwi+Maru?subset=japanese
  */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 
-/* 
- * <body>タグにスタイルを適用(すべてのコンテンツ)
- */
 body {
     /* 左から優先して見つかったフォントを適用する(Webフォント) */
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -20,18 +11,11 @@ body {
     background-color:beige
 }
 
-/* 
- * <h1>,<h2>,<h3>タグすべてにスタイルを適用
- * (複数のタグ名をカンマ区切りで指定すると複数を一気に指定できる)
- */
 h1, h2, h3 {
     /* 左から優先して見つかったフォントを適用する(游ゴシック) */
     font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-/* 
- * <h2>タグにスタイルを適用
- */
 h2 {
     /* 線を描画 (solid:1本線, #1e366a: 16進数カラーコード, 1px: 文字の太さ */
     border-bottom: solid #1e366a 1px; 
@@ -47,7 +31,6 @@ ul {
 
 /* 
  * class="answers"が指定されているタグの部分にスタイルを適用
- * ※classは複数の要素に指定することができる(class="answers"は複数のタグに指定できる)
  */
 ol.answers {
     /* リストの先頭の表示を指定 */
@@ -58,7 +41,6 @@ ol.answers {
 
 /*
  * <ul>の中にある<li>タグにスタイルを適用
- * (タグ名とタグ名をスペースで指定すると、左に記述したタグの子どものタグを指定することになる）
  */
 ul li, ol li {
     /* 要素の内側（境界線からコンテンツ本体の間)の領域。2つ指定しているときは左から 上下 左右 の順番で値が指定される(※em指定することでブラウザの拡大、縮小で1emが変化する) */
@@ -87,8 +69,6 @@ span#correct-answer {
   
 /* 
  * id="main"が指定されているタグの部分にスタイルを適用
- * ※idは複数の要素に指定することはできない(id="main"が指定されているのは一つのHTMLで一つのみ)
- * ※要素名は省略できるがdiv#mainと書くこともできる
  */
 #main {
     /* 要素の内側（境界線からコンテンツ本体の間)の領域を指定(上下, 左右) */
@@ -97,9 +77,6 @@ span#correct-answer {
 
 /*
  * class="section"が指定されているタグの部分にスタイルを適用
- * ※classは複数の要素に指定することができる
- * ※要素名は省略して.sectionと書くこともできる
- * (その場合、class指定されている要素すべてにスタイルが適用される)
  */
 div.section {
     /* 上の余白を指定 */
